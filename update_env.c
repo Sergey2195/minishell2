@@ -6,7 +6,7 @@
 /*   By: iannmari <iannmari@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 12:56:11 by iannmari          #+#    #+#             */
-/*   Updated: 2022/06/12 16:18:09 by iannmari         ###   ########.fr       */
+/*   Updated: 2022/06/12 16:57:08 by iannmari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 t_env	*find_env(t_env *head, char *key)
 {
-	t_env *env;
+	t_env	*env;
 
 	env = head;
 	while (env)

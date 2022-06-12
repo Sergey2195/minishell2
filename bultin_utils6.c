@@ -6,13 +6,13 @@
 /*   By: iannmari <iannmari@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/10 19:17:36 by iannmari          #+#    #+#             */
-/*   Updated: 2022/06/12 16:15:55 by iannmari         ###   ########.fr       */
+/*   Updated: 2022/06/12 16:47:27 by iannmari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minishell.h"
 
-int		is_num_str(char *str)
+int	is_num_str(char *str)
 {
 	int	i;
 
@@ -62,10 +62,9 @@ void	ft_exit(t_info *s, t_cmd *cmd)
 	}
 }
 
-
-int		check_len(char *key, char *value, int has_equal)
+int	check_len(char *key, char *value, int has_equal)
 {
-	int len;
+	int	len;
 
 	len = 0;
 	if (has_equal == FALSE)

@@ -6,13 +6,13 @@
 /*   By: iannmari <iannmari@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 13:39:14 by iannmari          #+#    #+#             */
-/*   Updated: 2022/06/12 16:17:54 by iannmari         ###   ########.fr       */
+/*   Updated: 2022/06/12 16:55:53 by iannmari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minishell.h"
 
-int		is_backslash(t_info *s)
+int	is_backslash(t_info *s)
 {
 	int		flag;
 	int		i;
@@ -54,8 +54,8 @@ void	del_key(t_info *s)
 		row -= 1;
 		col = s->max.col;
 	}
-	tputs(tgoto(s->term.cm, col, row), 1, ft_putchar);//uznat
-	tputs(s->term.ce, 1, ft_putchar);//uznat
+	tputs(tgoto(s->term.cm, col, row), 1, ft_putchar);
+	tputs(s->term.ce, 1, ft_putchar);
 	s->input = del_char(s->input);
 }
 
@@ -89,7 +89,7 @@ void	key(t_info *s, int keycode)
 	}
 }
 
-int		term_loop(t_info *s)
+int	term_loop(t_info *s)
 {
 	int	c;
 

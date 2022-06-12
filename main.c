@@ -6,7 +6,7 @@
 /*   By: iannmari <iannmari@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 12:02:45 by iannmari          #+#    #+#             */
-/*   Updated: 2022/06/12 16:17:40 by iannmari         ###   ########.fr       */
+/*   Updated: 2022/06/12 17:00:46 by iannmari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,8 @@ void	start(t_info *s)
 		}
 	}
 	tcsetattr(0, TCSANOW, &g_info.term.save);
-	tokenizer(0, 1);
+	if (g_info.input2)
+		tokenizer(0, 1);
 }
 
 int	main(int argc, char **argv, char **envp)
@@ -51,13 +52,11 @@ int	main(int argc, char **argv, char **envp)
 	init_info(&g_info);
 	signal(SIGINT, (void *)sig);
 	signal(SIGQUIT, (void *)sig);
-	init_env(envp, &g_info);//parse_env
+	init_env(envp, &g_info);
 	while (1)
 	{
-		start(&g_info);//prompt2
+		start(&g_info);
 		executor(&g_info, g_info.cmd_head, envp);
 		prepare_token_and_cmd(&g_info);
 	}
 }
-
-

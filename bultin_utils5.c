@@ -6,7 +6,7 @@
 /*   By: iannmari <iannmari@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/22 19:15:44 by iannmari          #+#    #+#             */
-/*   Updated: 2022/06/12 16:15:36 by iannmari         ###   ########.fr       */
+/*   Updated: 2022/06/12 16:46:16 by iannmari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void	delete_env(t_env *head, char *key)
 	}
 }
 
-int		check_key(char *key)
+int	check_key(char *key)
 {
 	int	i;
 

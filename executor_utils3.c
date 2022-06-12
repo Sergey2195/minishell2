@@ -6,7 +6,7 @@
 /*   By: iannmari <iannmari@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 19:20:46 by iannmari          #+#    #+#             */
-/*   Updated: 2022/06/12 16:17:04 by iannmari         ###   ########.fr       */
+/*   Updated: 2022/06/12 16:51:43 by iannmari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ void	parse_path(t_info *s)
 	free_2d(path_list);
 }
 
-int		find_success_cmd(t_info *s, t_cmd *cmd, char *path, DIR *dir_ptr)
+int	find_success_cmd(t_info *s, t_cmd *cmd, char *path, DIR *dir_ptr)
 {
 	make_path(cmd, path);
 	closedir(dir_ptr);
@@ -67,7 +67,7 @@ int		find_success_cmd(t_info *s, t_cmd *cmd, char *path, DIR *dir_ptr)
 	return (1);
 }
 
-int		find_command(t_info *s, t_cmd *cmd)
+int	find_command(t_info *s, t_cmd *cmd)
 {
 	DIR				*dir_ptr;
 	struct dirent	*f;

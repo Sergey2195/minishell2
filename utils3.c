@@ -6,7 +6,7 @@
 /*   By: iannmari <iannmari@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 17:17:17 by iannmari          #+#    #+#             */
-/*   Updated: 2022/06/12 16:18:25 by iannmari         ###   ########.fr       */
+/*   Updated: 2022/06/12 16:58:23 by iannmari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ char	*ft_strjoin2(char *s1, char *s2)
 	return (res);
 }
 
-int		is_operator_error(int type)
+int	is_operator_error(int type)
 {
 	if ((type >= 4 && type <= 6) || (type >= 8 && type <= 9))
 		return (TRUE);

@@ -6,7 +6,7 @@
 /*   By: iannmari <iannmari@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/10 18:04:54 by iannmari          #+#    #+#             */
-/*   Updated: 2022/06/12 16:16:33 by iannmari         ###   ########.fr       */
+/*   Updated: 2022/06/12 16:48:52 by iannmari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,7 @@ void	remove_space(t_token *token)
 void	parse_cmd(t_info *s, int ac)
 {
 	t_token	*token;
-	t_token *start;
+	t_token	*start;
 	int		type;
 
 	token = s->token_head;

@@ -6,7 +6,7 @@
 /*   By: iannmari <iannmari@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 19:35:01 by iannmari          #+#    #+#             */
-/*   Updated: 2022/06/12 16:17:10 by iannmari         ###   ########.fr       */
+/*   Updated: 2022/06/12 16:52:04 by iannmari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ void	execute_error(t_info *s, t_cmd *cmd, int type)
 	}
 }
 
-int		find_simple_cmd(t_cmd *cmd, int *err)
+int	find_simple_cmd(t_cmd *cmd, int *err)
 {
 	struct stat	buf;
 

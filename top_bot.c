@@ -6,7 +6,7 @@
 /*   By: iannmari <iannmari@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 15:12:43 by iannmari          #+#    #+#             */
-/*   Updated: 2022/06/12 16:18:05 by iannmari         ###   ########.fr       */
+/*   Updated: 2022/06/12 16:56:58 by iannmari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ void	up(t_info *s)
 	write(1, s->save_head->input, ft_strlen(s->save_head->input));
 	if (s->input != NULL)
 		free(s->input);
-	s->input = ft_strdup(s->save_head->input);	
+	s->input = ft_strdup(s->save_head->input);
 }
 
 void	down(t_info *s)

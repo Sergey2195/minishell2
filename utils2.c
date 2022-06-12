@@ -6,7 +6,7 @@
 /*   By: iannmari <iannmari@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 16:14:56 by iannmari          #+#    #+#             */
-/*   Updated: 2022/06/12 16:18:22 by iannmari         ###   ########.fr       */
+/*   Updated: 2022/06/12 16:57:53 by iannmari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ int	get_operator(char *c, int i)
 	return (0);
 }
 
-int		find_end(t_info *s, int type, int i)
+int	find_end(t_info *s, int type, int i)
 {
 	int		len;
 	char	*input;
@@ -67,7 +67,7 @@ int		find_end(t_info *s, int type, int i)
 	return (0);
 }
 
-int		check_backslash_count(char *input, int i)
+int	check_backslash_count(char *input, int i)
 {
 	int	count;
 
@@ -85,7 +85,7 @@ int		check_backslash_count(char *input, int i)
 
 t_token	*create_token(char *str, int type)
 {
-	t_token *token;
+	t_token	*token;
 
 	if (!ft_calloc(1, sizeof(t_token), (void *)&token))
 		exit(1);
@@ -95,7 +95,7 @@ t_token	*create_token(char *str, int type)
 	return (token);
 }
 
-int		find_cur_type(t_token **head, int *has_space)
+int	find_cur_type(t_token **head, int *has_space)
 {
 	t_token	*token;
 	int		type;

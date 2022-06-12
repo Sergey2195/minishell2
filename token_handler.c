@@ -6,13 +6,13 @@
 /*   By: iannmari <iannmari@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 17:00:56 by iannmari          #+#    #+#             */
-/*   Updated: 2022/06/12 16:17:58 by iannmari         ###   ########.fr       */
+/*   Updated: 2022/06/12 16:56:35 by iannmari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minishell.h"
 
-int		check_syntax_error(int cur_type, int next_type, int has_space)
+int	check_syntax_error(int cur_type, int next_type, int has_space)
 {
 	int	type;
 
@@ -31,7 +31,7 @@ int		check_syntax_error(int cur_type, int next_type, int has_space)
 	return (type);
 }
 
-int		check_deep_syntax_error(int cur_type, int next_type, int has_space)
+int	check_deep_syntax_error(int cur_type, int next_type, int has_space)
 {
 	int	type;
 

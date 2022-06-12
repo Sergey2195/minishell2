@@ -6,7 +6,7 @@
 /*   By: iannmari <iannmari@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 12:18:03 by iannmari          #+#    #+#             */
-/*   Updated: 2022/06/12 16:18:14 by iannmari         ###   ########.fr       */
+/*   Updated: 2022/06/12 16:58:41 by iannmari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ int	ft_calloc(size_t n, size_t size, void **ret)
 	return (1);
 }
 
-int		ft_strcmp(char *s1, char *s2)
+int	ft_strcmp(char *s1, char *s2)
 {
 	int	i;
 
@@ -56,7 +56,7 @@ int		ft_strcmp(char *s1, char *s2)
 	return (s1[i] - s2[i]);
 }
 
-int		ft_putchar(int c)
+int	ft_putchar(int c)
 {
 	return (write(1, &c, 1));
 }

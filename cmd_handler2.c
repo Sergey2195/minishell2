@@ -6,7 +6,7 @@
 /*   By: iannmari <iannmari@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/10 10:59:22 by iannmari          #+#    #+#             */
-/*   Updated: 2022/06/12 16:16:23 by iannmari         ###   ########.fr       */
+/*   Updated: 2022/06/12 16:48:39 by iannmari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,8 +45,8 @@ void	check_backslash(t_token *token)
 	i = 0;
 	while (token->str[i])
 	{
-		if (token->str[i] == '\\' &&
-		(token->str[i + 1] == '\\' || token->str[i + 1] == '\"'))
+		if (token->str[i] == '\\'
+			&& (token->str[i + 1] == '\\' || token->str[i + 1] == '\"'))
 		{
 			tmp = ft_substr(token->str, 0, i);
 			tmp2 = ft_strjoin2(tmp, &token->str[i + 1]);

@@ -6,7 +6,7 @@
 /*   By: iannmari <iannmari@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 16:05:07 by iannmari          #+#    #+#             */
-/*   Updated: 2022/06/12 16:18:02 by iannmari         ###   ########.fr       */
+/*   Updated: 2022/06/12 17:05:09 by iannmari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ char	*trim_str(char *str, int type)
 
 void	add_token_back(t_token **head, char *str, int type)
 {
-	t_token *token;
+	t_token	*token;
 	int		token_type;
 	int		cur_type;
 	int		has_space;
@@ -52,7 +52,7 @@ void	add_token_back(t_token **head, char *str, int type)
 	}
 }
 
-int		make_token(t_info *s, int count, int i, int type)
+int	make_token(t_info *s, int count, int i, int type)
 {
 	char	*token_str;
 	int		j;
@@ -68,7 +68,7 @@ int		make_token(t_info *s, int count, int i, int type)
 	return (i);
 }
 
-int		get_len(char *input, int i)
+int	get_len(char *input, int i)
 {
 	int	len;
 
@@ -87,8 +87,6 @@ void	tokenizer(int i, int count)
 {
 	int	type;
 
-	if (!g_info.input2)
-		return ;
 	while (g_info.input2[i])
 	{
 		count = 1;
@@ -103,11 +101,12 @@ void	tokenizer(int i, int count)
 			continue ;
 		}
 		else if (type == 2 || type == 3)
-			if (!(count = find_end(&g_info, type, ++i)))
-			{
-				i = make_token(&g_info, 1, i - 1, -1);
-				break ;
-			}
+			count = find_end(&g_info, type, ++i);
+		if (!count)
+		{
+			i = make_token(&g_info, 1, i - 1, -1);
+			break ;
+		}
 		i = make_token(&g_info, count, i, type);
 	}
 	check_token_error(&g_info);

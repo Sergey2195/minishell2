@@ -6,13 +6,13 @@
 /*   By: iannmari <iannmari@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/14 19:12:10 by iannmari          #+#    #+#             */
-/*   Updated: 2022/06/12 16:15:29 by iannmari         ###   ########.fr       */
+/*   Updated: 2022/06/12 16:46:04 by iannmari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minishell.h"
 
-int		check_key2(char *key)
+int	check_key2(char *key)
 {
 	int	i;
 
@@ -32,7 +32,7 @@ void	error_export(t_info *s, t_cmd *cmd, int i)
 	s->ret = 1;
 }
 
-int		parse_export(t_env *tmp, char *str)
+int	parse_export(t_env *tmp, char *str)
 {
 	int	klen;
 	int	vlen;

@@ -6,7 +6,7 @@
 /*   By: iannmari <iannmari@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 17:11:22 by iannmari          #+#    #+#             */
-/*   Updated: 2022/06/12 16:16:54 by iannmari         ###   ########.fr       */
+/*   Updated: 2022/06/12 16:50:21 by iannmari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,9 @@ char	*find_env_val(t_env *head, char *key)
 	return ("");
 }
 
-int		check_key_len(char *str, int is_tokenizer)
+int	check_key_len(char *str, int is_tokenizer)
 {
-	int len;
+	int	len;
 
 	len = 0;
 	while (str[len])

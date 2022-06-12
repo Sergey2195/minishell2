@@ -6,7 +6,7 @@
 /*   By: iannmari <iannmari@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 18:41:42 by iannmari          #+#    #+#             */
-/*   Updated: 2022/06/12 16:14:25 by iannmari         ###   ########.fr       */
+/*   Updated: 2022/06/12 16:45:21 by iannmari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ int	builtin(t_info *s, t_cmd *cmd)
 		return (1);
 	}
 	else if (!ft_strcmp(cmd->av[0], "exit") && (cmd->type == 8
-		|| (cmd->next != 0 && cmd->next->type == 8)))
+			|| (cmd->next != 0 && cmd->next->type == 8)))
 	{
 		s->ret = 0;
 		return (1);
@@ -80,4 +80,3 @@ int	builtin(t_info *s, t_cmd *cmd)
 	else
 		return (0);
 }
-

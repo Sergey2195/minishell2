@@ -6,7 +6,7 @@
 /*   By: iannmari <iannmari@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 12:32:55 by iannmari          #+#    #+#             */
-/*   Updated: 2022/06/12 16:17:33 by iannmari         ###   ########.fr       */
+/*   Updated: 2022/06/12 16:52:48 by iannmari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ void	init_env(char **envp, t_info *info)
 			if (envp[i][j] == '=')
 			{
 				key = ft_substr(envp[i], 0, j);
-				value = ft_substr(envp[i], j+1, ft_strlen(envp[i]));
+				value = ft_substr(envp[i], j + 1, ft_strlen(envp[i]));
 				break ;
 			}
 			j++;

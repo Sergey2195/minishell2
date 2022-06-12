@@ -6,7 +6,7 @@
 /*   By: iannmari <iannmari@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 18:38:09 by iannmari          #+#    #+#             */
-/*   Updated: 2022/06/12 16:17:01 by iannmari         ###   ########.fr       */
+/*   Updated: 2022/06/12 16:51:14 by iannmari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ void	renewal_cmd(t_cmd *cmd)
 	cmd->ac = cnt;
 }
 
-int		check_redirection(t_cmd *cmd)
+int	check_redirection(t_cmd *cmd)
 {
 	int	i;
 

@@ -6,13 +6,13 @@
 /*   By: iannmari <iannmari@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 14:29:34 by iannmari          #+#    #+#             */
-/*   Updated: 2022/06/12 16:16:50 by iannmari         ###   ########.fr       */
+/*   Updated: 2022/06/12 16:49:46 by iannmari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minishell.h"
 
-int		get_nbr_len(int n)
+int	get_nbr_len(int n)
 {
 	int	ret;
 

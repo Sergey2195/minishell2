@@ -6,7 +6,7 @@
 /*   By: iannmari <iannmari@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 14:04:12 by iannmari          #+#    #+#             */
-/*   Updated: 2022/06/12 16:16:46 by iannmari         ###   ########.fr       */
+/*   Updated: 2022/06/12 16:49:31 by iannmari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ void	set_cursor_windows(t_info *s)
 {
 	struct winsize	w;
 
-	ioctl(STDOUT_FILENO, TIOCGWINSZ, &w);//Функция ioctl манипулирует базовыми параметрами устройств, представленных в виде специальных файлов. TIOCGWINSZ     struct winsize *argp Определить размер окна.TIOCSWINSZ     const struct winsize *argp
+	ioctl(STDOUT_FILENO, TIOCGWINSZ, &w);
 	s->max.col = w.ws_col;
 	s->max.row = w.ws_row;
 	set_cursor(&s->start.col, &s->start.row);
