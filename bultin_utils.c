@@ -6,7 +6,7 @@
 /*   By: iannmari <iannmari@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 18:58:10 by iannmari          #+#    #+#             */
-/*   Updated: 2022/06/12 16:15:01 by iannmari         ###   ########.fr       */
+/*   Updated: 2022/06/19 11:38:47 by iannmari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,7 +97,7 @@ int	ft_cd(t_info *s, t_cmd *cmd)
 		change_dir(s, "~");
 	else if (change_dir(s, cmd->av[1]) == -1)
 	{
-		printf("bash: cd: %s: No such file or directory\n", cmd->av[1]);
+		printf("minihell: cd: %s: No such file or directory\n", cmd->av[1]);
 		s->ret = 1;
 	}
 	else

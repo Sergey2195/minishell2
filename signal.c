@@ -6,7 +6,7 @@
 /*   By: iannmari <iannmari@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 12:22:14 by iannmari          #+#    #+#             */
-/*   Updated: 2022/06/12 16:17:51 by iannmari         ###   ########.fr       */
+/*   Updated: 2022/06/19 11:40:26 by iannmari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	sig(int signal)
 	{
 		if (g_info.is_fork == 0)
 		{
-			write(1, "\nbash> ", 7);
+			write(1, "\nminihell> ", ft_strlen("\nminihell> "));
 			if (g_info.input)
 				free(g_info.input);
 			g_info.input = 0;

@@ -6,7 +6,7 @@
 /*   By: iannmari <iannmari@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/22 19:15:44 by iannmari          #+#    #+#             */
-/*   Updated: 2022/06/12 16:46:16 by iannmari         ###   ########.fr       */
+/*   Updated: 2022/06/19 11:38:55 by iannmari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ void	ft_unset(t_info *s, t_cmd *cmd)
 		{
 			if (!check_key(cmd->av[i]))
 			{
-				printf("bash: unset: `%s': not a valid identifier\n",
+				printf("minihell: unset: `%s': not a valid identifier\n",
 					cmd->av[i]);
 				s->ret = 1;
 			}

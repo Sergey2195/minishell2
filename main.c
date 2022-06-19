@@ -6,7 +6,7 @@
 /*   By: iannmari <iannmari@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 12:02:45 by iannmari          #+#    #+#             */
-/*   Updated: 2022/06/12 17:00:46 by iannmari         ###   ########.fr       */
+/*   Updated: 2022/06/19 11:40:02 by iannmari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	prepare_token_and_cmd(t_info *state)
 
 void	start(t_info *s)
 {
-	write(1, "bash", 4);
+	write(1, "minihell", ft_strlen("minihell"));
 	init_terminal(s);
 	while (1)
 	{

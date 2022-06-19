@@ -6,7 +6,7 @@
 /*   By: iannmari <iannmari@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 18:23:10 by iannmari          #+#    #+#             */
-/*   Updated: 2022/06/12 16:50:43 by iannmari         ###   ########.fr       */
+/*   Updated: 2022/06/19 11:41:06 by iannmari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ void	execute_cmd2(t_info *s, t_cmd *cmd, char **envp)
 
 	if (!check_redirection(cmd))
 	{
-		printf("bash: %s: %s\n", cmd->av[2], strerror(errno));
+		printf("minihell: %s: %s\n", cmd->av[2], strerror(errno));
 	}
 	else if (cmd->ac == 0)
 		return ;

@@ -6,7 +6,7 @@
 /*   By: iannmari <iannmari@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/14 19:12:10 by iannmari          #+#    #+#             */
-/*   Updated: 2022/06/12 16:46:04 by iannmari         ###   ########.fr       */
+/*   Updated: 2022/06/19 11:40:49 by iannmari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	check_key2(char *key)
 
 void	error_export(t_info *s, t_cmd *cmd, int i)
 {
-	printf("bash: export: `%s': not a valid identifier\n", cmd->av[i]);
+	printf("minihell: export: `%s': not a valid identifier\n", cmd->av[i]);
 	s->ret = 1;
 }
 

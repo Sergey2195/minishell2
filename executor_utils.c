@@ -6,7 +6,7 @@
 /*   By: iannmari <iannmari@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 18:25:34 by iannmari          #+#    #+#             */
-/*   Updated: 2022/06/12 16:50:56 by iannmari         ###   ########.fr       */
+/*   Updated: 2022/06/19 11:39:32 by iannmari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,15 @@ void	handle_syntax_error(t_info *s, t_cmd *cmd)
 	if (cmd->type == -1)
 		printf("error : quote error\n");
 	else if (cmd->type == -2)
-		printf("bash: syntax error near unexpected token `|'\n");
+		printf("minihell: syntax error near unexpected token `|'\n");
 	else if (cmd->type == -3)
-		printf("bash: syntax error near unexpected token `;'\n");
+		printf("minihell: syntax error near unexpected token `;'\n");
 	else if (cmd->type == -4)
-		printf("bash: syntax error near unexpected token `||'\n");
+		printf("minihell: syntax error near unexpected token `||'\n");
 	else if (cmd->type == -5)
-		printf("bash: syntax error near unexpected token `;;'\n");
+		printf("minihell: syntax error near unexpected token `;;'\n");
 	else if (cmd->type == -6)
-		printf("bash: syntax error near unexpected token `newline'\n");
+		printf("minihell: syntax error near unexpected token `newline'\n");
 	s->ret = 258;
 }
 

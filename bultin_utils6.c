@@ -6,7 +6,7 @@
 /*   By: iannmari <iannmari@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/10 19:17:36 by iannmari          #+#    #+#             */
-/*   Updated: 2022/06/12 16:47:27 by iannmari         ###   ########.fr       */
+/*   Updated: 2022/06/19 11:40:59 by iannmari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	is_num_str(char *str)
 void	exit_not_num(t_cmd *cmd)
 {
 	printf("exit\n");
-	printf("bash: exit: %s: numeric argument required\n", cmd->av[1]);
+	printf("minihell: exit: %s: numeric argument required\n", cmd->av[1]);
 	exit(255);
 }
 
@@ -57,7 +57,7 @@ void	ft_exit(t_info *s, t_cmd *cmd)
 	}
 	else
 	{
-		printf("bash: exit: too many arguments\n");
+		printf("minihell: exit: too many arguments\n");
 		s->ret = 1;
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: iannmari <iannmari@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 19:35:01 by iannmari          #+#    #+#             */
-/*   Updated: 2022/06/12 16:52:04 by iannmari         ###   ########.fr       */
+/*   Updated: 2022/06/19 11:39:44 by iannmari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	execute_error(t_info *s, t_cmd *cmd, int type)
 {
 	if (type == 1)
 	{
-		printf("bash: %s: %s\n", cmd->av[0], strerror(errno));
+		printf("minihell: %s: %s\n", cmd->av[0], strerror(errno));
 		if (errno == 13)
 			exit(126);
 		else if (errno == 2)
@@ -28,14 +28,14 @@ void	execute_error(t_info *s, t_cmd *cmd, int type)
 		if (!find_env(s->env_head, "PATH"))
 			type = 4;
 		if (type == 2)
-			printf("bash: %s: command not found\n", cmd->av[0]);
+			printf("minihell: %s: command not found\n", cmd->av[0]);
 		else if (type == 4)
-			printf("bash: %s: No such file or directory\n", cmd->av[0]);
+			printf("minihell: %s: No such file or directory\n", cmd->av[0]);
 		s->ret = 127;
 	}
 	else if (type == 3)
 	{
-		printf("bash: %s: is a directory\n", cmd->av[0]);
+		printf("minihell: %s: is a directory\n", cmd->av[0]);
 		s->ret = 126;
 	}
 }
